@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+        }
+        
+        #map div {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="score">当前分数为：0</h1>
+    <div id="map"></div>
+
+    <!-- 文件的引入顺序是根据不同的script标签的功能来划分的 -->
+    <!-- <script src="food.js"></script>
+	<script src="snake.js"></script>
+	<script src="game.js"></script>
+	<script>
+		// 下面是效果演示：
+		var score1 = document.getElementById('score');
+		var map1 = document.getElementById('map');
+		var g1 = new Game(map1, score1);
+		g1.start();
+	</script> -->
+    <script src="./require.js" data-main="main"></script>
+
+</body>
+
+</html>
